@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Trains Transit</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading" style="background-color: #20315A ; color: white;">
+                        <h3 class=" panel-title ">Current Train Schedule</h3>
+                    </div>
+
+
+                    <div class="panel-body">
+                        <table class="table" id="trainTable">
+                            <thead>
+                                <tr>
+                                    <th>Train Name</th>
+                                    <th>Destination</th>
+                                    <th>Frequency (min)</th>
+                                    <th>Next Arrival</th>
+                                    <th>Minutes Away</th>
+
+                                </tr>
+                            </thead>
+
+
+                            <tbody id="trainTable">
+                                <tr>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="panel panel-default">
+                            <div class="panel-heading" style="background-color: #20315A ; color: white;">
+                                <h3 class=" panel-title ">Add Train</h3>
+                            </div>
+
+
+                            <div class="panel-body ">
+                                <form>
+                                    <div class="form-group">
+                                        <label for="">Train Name</label>
+                                        <input type="text" class="form control" id="trainNameInput">
+
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for=""> Destination </label>
+                                        <input type="text" class="form control" id="destinationInput">
+
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="">First Train Time (HH:mm - Military Time)</label>
+                                        <input type="text" class="form control" id="firstTrainInput">
+
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="">Frequency (Min)</label>
+                                        <input type="text" class="form control" id="frequencyInput">
+
+                                    </div>
+
+                                </form>
+
+
+                                <!--OLD CODE BELOW COMMENTED OUT TRYING SOMETHING NEW-->
+                                <!--<p>Train Name</p>-->
+                                <!--<p><input type="form" id="train-name" data-value="trainInput"></p>-->
+                                <!--<p></p>Destination</p>-->
+                                <!--<p><input type="form" id="going"></p>-->
+                                <!--<p></p>First Train Time (HH:mm - military time):</p>-->
+                                <!--<p><input type="form" id="start" data-value="startYear"></p>-->
+                                <!--<p></p>Frequency (min)</p>-->
+                                <!--<p></p><input type="form" id="end" data-value="endYear"></p>-->
+                                <!-- <p></p>Total Billed:</p>
+                                     <p></p><input type="form" id="end" data-value="endYear"></p> -->
+
+                                <button id="submitBtn">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+            <script type="text/javascript" src="assets/javascript/trainV1.js"></script>
+        </div>
+    </div>
+</body>
